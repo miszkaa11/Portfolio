@@ -1,0 +1,89 @@
+/* Components */
+
+/* Containers */
+.container-sm {
+    max-width: var(--container-sm);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: var(--container-md);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container-md-v {
+    max-width: var(--container-md);
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container-lg {
+    max-width: var(--container-lg);
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Font Style */
+.f-style-primary {
+    font-family: var(--roboto-condensed);
+}
+
+/* Font Size */
+.f-text {
+    font-size: var(--font-size-text-l);
+    font-weight: var(--font-weight-regular);
+}
+
+.f-text-b {
+    font-size: var(--font-size-text-l);
+    font-weight: var(--font-weight-bold);
+}
+
+.f-heading-m {
+    font-size: var(--font-size-heading-m-l);
+    font-weight: var(--font-weight-regular);
+}
+
+.f-heading-l {
+    font-size: var(--font-size-heading-l-l);
+    font-weight: var(--font-weight-regular);
+}
+
+.f-heading-xl {
+    font-size: var(--font-size-heading-xl-l);
+    font-weight: var(--font-weight-regular);
+}
+
+/* Colors */
+.c-primary {
+    color: var(--color-primary);
+}
+
+.c-secondary {
+    color: var(--color-secondary);
+}
+
+.c-optional-1 {
+    color: var(--color-optional-1);
+}
+
+.c-optional-2 {
+    color: var(--color-optional-2);
+}
+
+/* Section Helpers */
+.bolded {
+    font-weight: var(--font-weight-bold);
+}
+
+/* Menu Desktop */
+
+/* Menu Item */
+
+/* Menu Hoover */
+
+/* Logo */
+
+/* Scrolled Nav */
