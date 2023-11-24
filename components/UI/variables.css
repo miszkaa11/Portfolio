@@ -14,10 +14,14 @@
 
 /* Font Size Desktop */
 --font-size-menu-l: 1.875rem;
---font-size-text-l: 1.125rem;
---font-size-heading-m-l: 1.563rem;
+--font-size-text-l: 1.375rem;
+--font-size-heading-m-l: 1.875rem;
 --font-size-heading-l-l: 2.5rem;
 --font-size-heading-xl-l: 4.063rem;
+
+/* Font Size Desktop Cv Page */
+--font-size-text-cv-l: 1.563rem;
+--font-size-agree-cv-l: 1rem;
 
 /* Font Size Small Desktop */
 
@@ -27,11 +31,17 @@
 
 /* Font Size Extra Mobile */
 
+/* Font Size Btn */
+--font-size-btn: 1.125rem;
+
 /* Font Weight */
 --font-weight-light: 300;
 --font-weight-regular: 400;
 --font-weight-medium: 500;
 --font-weight-bold: 700;
+
+/* Background Color */
+--bg-color-primary: #21252b;
 
 /* Font Color */
 --color-primary: #d19a5e;
@@ -39,4 +49,8 @@
 
 --color-optional-1: #ffffff;
 --color-optional-2: #43a3ef;
+--color-optional-3: #000000;
+
+/* Transition */
+--transition-primary: 0.3s all;
 }

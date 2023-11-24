@@ -146,6 +146,8 @@ function portfolio_scripts() {
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'jqueryui' );
 
+	wp_enqueue_script('Font Awesome', 'https://kit.fontawesome.com/5eef977532.js');
+
 	wp_enqueue_style( 'rwd', get_template_directory_uri() . '/components/UI/rwd.css' );
 	wp_enqueue_style( 'components', get_template_directory_uri() . '/components/UI/components.css' );
 	wp_enqueue_style( 'variables', get_template_directory_uri() . '/components/UI/variables.css' );
