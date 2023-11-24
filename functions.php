@@ -206,3 +206,21 @@ function add_aos_animation() {
 @ini_set( 'upload_max_size' , '256M' );
 @ini_set( 'post_max_size', '256M');
 @ini_set( 'max_execution_time', '1000' );
+
+// Work Gallery Post
+function work_gallery_render_post($post) {
+	?>
+
+		<div class="work-gallery-example d-flex-between">
+			<div class="work-gallery-text flex-40">
+				<a href="" class="work-gallery__link f-style-primary f-heading-m c-primary"><?php the_field('work_gallery_title'); ?></a>
+				<p class="work-gallery__paragraph f-style-primary f-text c-secondary"><?php the_field('work_gallery_content'); ?></p>
+				<a href="<?php echo get_permalink($post)?>" class="work-gallery-page__link f-style-primary f-text c-primary">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
+			</div>
+			<div class="work-gallery-image flex-55">
+				<img src="<?php the_field('work_gallery_image'); ?>" alt="Work Image" class="section__image">
+			</div>
+		</div>
+			
+	<?php
+}

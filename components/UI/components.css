@@ -302,6 +302,24 @@
     height: 100%;
 }
 
+.work-gallery-example {
+    margin-bottom: 5rem;
+}
+
+.work-gallery-example:nth-child(2) .work-gallery-text,
+.work-gallery-example:nth-child(4) .work-gallery-text,
+.work-gallery-example:nth-child(6) .work-gallery-text,
+.work-gallery-example:nth-child(8) .work-gallery-text,
+.work-gallery-example:nth-child(10) .work-gallery-text,
+.work-gallery-example:nth-child(12) .work-gallery-text,
+.work-gallery-example:nth-child(14) .work-gallery-text {
+    order: 1;
+}
+
+.work-gallery-example:last-of-type {
+    margin-bottom: 0;
+}
+
 .work-gallery__link,
 .work-gallery-page__link {
     display: inline-block;
@@ -330,6 +348,11 @@
 
 .work-gallery-page__link:hover i {
     margin-left: 1rem;
+}
+
+/* Gallery Template */
+.gallery-template-1 {
+    margin-top: 10rem;
 }
 
 /* Skills & CV Skills */

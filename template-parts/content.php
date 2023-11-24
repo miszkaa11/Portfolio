@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				portfolio_posted_on();
-				portfolio_posted_by();
+				// portfolio_posted_on();
+				// portfolio_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -32,32 +32,52 @@
 	<?php portfolio_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'portfolio' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+	  <?php
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'portfolio' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	  $template_name = get_field( 'tamplate_name' );
+	//   var_dump($template_name);
+	//   var_dump(!empty($template_name));
+	//   die();
+
+	  if ( !empty($template_name) ) {
+		  if ( $template_name === 'szablon_pierwszy' ) {
+			  require_once 'tpls/gallery-template-1.php';
+		  } elseif ( $template_name === 'szablon_drugi' ) {
+			  require_once 'tpls/gallery-template-2.php';
+		  } elseif ( $template_name === 'szablon_trzeci' ) {
+			  require_once 'tpls/gallery-template-3.php';
+		  } else {
+			  echo 'NIE WYBRANO SZABLONU';
+		  }
+	  } else {
+		  the_content(
+			  sprintf(
+				  wp_kses(
+				  /* translators: %s: Name of current post. Only visible to screen readers */
+					  __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'portfolio' ),
+					  array(
+						  'span' => array(
+							  'class' => array(),
+						  ),
+					  )
+				  ),
+				  wp_kses_post( get_the_title() )
+			  )
+		  );
+
+	  }
+
+
+	  wp_link_pages(
+		  array(
+			  'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'portfolio' ),
+			  'after'  => '</div>',
+		  )
+	  );
+	  ?>
+  </div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php portfolio_entry_footer(); ?>
+		<?php /* portfolio_entry_footer(); */ ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

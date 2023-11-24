@@ -69,16 +69,22 @@
             </div>
         </div>
         <div class="work-gallery__content">
-            <div class="work-gallery-example d-flex-between">
-                <div class="work-gallery-text flex-40">
-                    <a href="" class="work-gallery__link f-style-primary f-heading-m c-primary">novimocarni.pl</a>
-                    <p class="work-gallery__paragraph f-style-primary f-text c-secondary">Novi Mocarni is not only a tribute to the Podhale tradition, but also an expression of respect for the power of nature. Therefore, the entire investment is built in ecological technology. The buildings are equipped with a photovoltaic installation, a heat pump in each apartment, recuperation and a private charging station for electric vehicles.</p>
-                    <a href="" class="work-gallery-page__link f-style-primary f-text c-primary">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
-                </div>
-                <div class="work-gallery-image flex-55">
-                    <img src="/portfolio/wp-content/uploads/2023/11/mocarni_image_1.webp" alt="Work Image" class="section__image">
-                </div>
-            </div>
+
+            <?php
+                $work_gallery_posts = get_posts(array(
+                    'category_name' => 'Projekty',
+                    'posts_per_page'    => -1
+                ));
+
+                foreach($work_gallery_posts as $post):
+                    setup_postdata($post);
+
+                    work_gallery_render_post($post);
+
+                endforeach;
+                wp_reset_postdata();
+            ?>
+
         </div>
     </div>
 </section>
@@ -137,7 +143,7 @@
                 <a href="<?php the_field('cv_zone_download'); ?>" class="cv-zone__link f-style-primary f-text c-secondary"><i class="fa-solid fa-file-import fa-6x"></i>Download WebDev CV</a>
             </div>
             <div class="cv-zone-page">
-                <a href="/portfolio/cv/" class="cv-zone__link f-style-primary f-text c-primary"><i class="fa-solid fa-file-code fa-6x"></i>WebDev CV Page</a>
+                <a href="/portfolio/cv/" class="cv-zone__link f-style-primary f-text c-secondary"><i class="fa-solid fa-file-code fa-6x"></i>WebDev CV Page</a>
             </div>
         </div>
     </div>
