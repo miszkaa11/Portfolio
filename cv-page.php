@@ -13,7 +13,7 @@
 
 <section id="cv-page" class="cv-page">
     <div class="container-sm">
-        <div class="cv-page__content">
+        <div class="cv-page__content s-p-2">
             <div class="cv-page-header d-flex-between">
                 <div class="cv-image">
                     <img src="/portfolio/wp-content/uploads/2023/11/about_me_image.webp" alt="Picture Of Me" class="section__image" data-aos="zoom-in">
@@ -47,27 +47,29 @@
                 <p class="cv-portfolio__paragraph f-style-primary f-text-cv c-primary" data-aos="zoom-in">and the projects I have completed:</p>
                 <a href="https://michallukaszewicz.pl/" class="cv-portfolio__link f-style-primary f-text-cv-b c-optional-1" data-aos="zoom-in">www.michallukaszewicz.pl</a>
             </div>
-            <div class="cv-skills d-flex-between">
+            <div class="cv-skills">
                 <div class="cv-skills-title" data-aos="zoom-in">
                     <h3 class="cv-experience-title__heading f-style-primary f-heading-m c-primary">#Skills</h3>
                 </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-js-square fa-8x"></i>
-                </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-react fa-8x"></i>
-                </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-html5 fa-8x"></i>
-                </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-css3-alt fa-8x"></i>
-                </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-wordpress fa-8x"></i>
-                </div>
-                <div class="cv-skill-example" data-aos="zoom-in">
-                    <i class="fab fa-git fa-8x"></i>
+                <div class="cv-skill-example-box d-flex-between">
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-js-square fa-8x"></i>
+                    </div>
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-react fa-8x"></i>
+                    </div>
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-html5 fa-8x"></i>
+                    </div>
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-css3-alt fa-8x"></i>
+                    </div>
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-wordpress fa-8x"></i>
+                    </div>
+                    <div class="cv-skill-example" data-aos="zoom-in">
+                        <i class="fab fa-git fa-8x"></i>
+                    </div>
                 </div>
             </div>
             <div class="cv-tech-stack d-flex-between">

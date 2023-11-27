@@ -230,6 +230,12 @@
     align-items: center;
 }
 
+.d-flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .d-flex-center {
     display: flex;
     justify-content: center;
@@ -340,14 +346,18 @@
     margin-bottom: 0;
 }
 
-.work-gallery__link,
+.work-gallery-title__heading,
 .work-gallery-page__link,
 .mobile__link {
-    display: inline-block;
     transition: var(--transition-primary) !important;
 }
 
-.work-gallery__link {
+.work-gallery-page__link,
+.mobile__link {
+    display: inline-block;
+}
+
+.work-gallery-title__heading {
     margin-bottom: 1rem;
 }
 
@@ -361,7 +371,7 @@
     display: none;
 }
 
-.work-gallery__link:hover,
+.work-gallery-title__heading:hover,
 .work-gallery-page__link:hover,
 .mobile__link:hover {
     color: var(--color-optional-2);
@@ -381,6 +391,14 @@
 /* Gallery Template */
 .gallery-template-1 {
     margin-top: 10rem;
+}
+
+.gallery-template-1__content {
+    margin-bottom: 10rem;
+}
+
+.gallery-template-1__heading {
+    margin-bottom: 1rem;
 }
 
 /* Skills & CV Skills */
@@ -635,11 +653,11 @@ textarea:focus {
 }
 
 .cv-image {
-    flex-basis: 25%;
+    flex-basis: 35%;
 }
 
 .cv-contact {
-    flex-basis: 65%;
+    flex-basis: 60%;
 }
 
 /* Cv Header */
@@ -709,7 +727,17 @@ textarea:focus {
 
 /* Cv Skills */
 .cv-skills {
+    display: flex;
+    align-items: center;
     margin: 2rem 0;
+}
+
+.cv-skill-example-box {
+    width: 100%;
+}
+
+.cv-skills-title {
+    margin-right: 4rem;
 }
 
 .cv-skill-example i {
@@ -764,4 +792,126 @@ textarea:focus {
     background-color: var(--color-primary) !important;
     color: var(--bg-color-primary) !important;
     border-color: var(--color-primary) !important;
+}
+
+/* Gallery Template */
+ .options {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 100%;
+    height: 600px;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+ .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    margin: 0 0.5rem;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: var(--transition-primary)
+}
+
+.options .option:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(171, 178, 178, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(171, 178, 178, 1);
+    box-shadow: 0px 0px 10px 0px rgba(171, 178, 178, 1);
+    border-radius: 1rem;
+}
+
+.option:nth-child(1) {
+    --defaultBackground: #ed5565;
+}
+.option:nth-child(2) {
+    --defaultBackground: #fc6e51;
+}
+.option:nth-child(3) {
+    --defaultBackground: #ffce54;
+}
+.option:nth-child(4) {
+    --defaultBackground: #2ecc71;
+}
+.option:nth-child(5) {
+    --defaultBackground: #5d9cec;
+}
+.option:nth-child(6) {
+    --defaultBackground: #ac92ec;
+}
+
+.option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 1000px;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    background-size: auto 100%;
+}
+
+.option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+.option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+}
+.option:not(.active) {
+    flex-grow: 1;
+    border-radius: 1rem;
+}
+
+.option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 1;
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: var(--transition-primary);
+}
+
+.icon,
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-optional-1);
+    font-size: 0.85rem;
+    color: var(--bg-color-primary);
+    min-width: auto;
+    width: auto;
+    height: 40px;
+    border-radius: 1rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.icon {
+    flex-direction: row;
+    padding: 0 1rem;
+}
+
+.info {
+    flex-direction: column;
+    margin-left: 1rem;
+    padding: 0 0.5rem;
+}
+
+.template__link {
+    margin-bottom: 1rem;
+    display: inline-block;
 }

@@ -213,7 +213,7 @@ function work_gallery_render_post($post) {
 
 		<div class="work-gallery-example d-flex-between">
 			<div class="work-gallery-text flex-40">
-				<a href="" class="work-gallery__link f-style-primary f-heading-m c-primary" data-aos="zoom-in"><?php the_field('work_gallery_title'); ?></a>
+				<h3 class="work-gallery-title__heading f-style-primary f-heading-m c-primary" data-aos="zoom-in"><?php the_field('work_gallery_title'); ?></h3>
 				<p class="work-gallery__paragraph f-style-primary f-text c-secondary" data-aos="zoom-in"><?php the_field('work_gallery_content'); ?></p>
 				<a href="<?php echo get_permalink($post)?>" class="work-gallery-page__link f-style-primary f-text c-primary" data-aos="zoom-in">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
 			</div>
