@@ -17,22 +17,53 @@
 --font-size-text-l: 1.375rem;
 --font-size-heading-m-l: 1.875rem;
 --font-size-heading-l-l: 2.5rem;
---font-size-heading-xl-l: 4.063rem;
+--font-size-heading-xl-l: 4.688rem;
 
 /* Font Size Desktop Cv Page */
 --font-size-text-cv-l: 1.563rem;
 --font-size-agree-cv-l: 1rem;
 
 /* Font Size Small Desktop */
+--font-size-menu-ml: 1.775rem;
+--font-size-text-ml: 1.275rem;
+--font-size-heading-m-ml: 1.675rem;
+--font-size-heading-l-ml: 2.25rem;
+--font-size-heading-xl-ml: 4.063rem;
+
+/* Font Size Small Desktop Cv Page */
+--font-size-text-cv-ml: 1.463rem;
+
+/* Font Size Desktop Btn */
+--font-size-btn-l: 1.125rem;
 
 /* Font Size Tablet */
+--font-size-menu-m: 1.675rem;
+--font-size-text-m: 1.175rem;
+--font-size-heading-m-m: 1.5rem;
+--font-size-heading-l-m: 2rem;
+--font-size-heading-xl-m: 3.438rem;
+
+/* Font Size Tablet Cv Page */
+--font-size-text-cv-m: 1.363rem;
+
+/* Font Size Tablet Btn */
+--font-size-btn-m: 1rem;
 
 /* Font Size Mobile */
+--font-size-menu-s: 1.25rem;
+--font-size-text-s: 1rem;
+--font-size-heading-m-s: 1.375rem;
+--font-size-heading-l-s: 1.75rem;
+--font-size-heading-xl-s: 3.125rem;
 
-/* Font Size Extra Mobile */
+/* Font Size Mobile Cv Page */
+--font-size-text-cv-s: 1.25rem;
 
-/* Font Size Btn */
---font-size-btn: 1.125rem;
+/* Font Size Mobile Btn */
+--font-size-btn-s: 0.85rem;
+
+/* Font Size Small Mobile */
+--font-size-heading-xl-xs: 2.75rem;
 
 /* Font Weight */
 --font-weight-light: 300;

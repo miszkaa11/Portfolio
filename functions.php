@@ -213,12 +213,13 @@ function work_gallery_render_post($post) {
 
 		<div class="work-gallery-example d-flex-between">
 			<div class="work-gallery-text flex-40">
-				<a href="" class="work-gallery__link f-style-primary f-heading-m c-primary"><?php the_field('work_gallery_title'); ?></a>
-				<p class="work-gallery__paragraph f-style-primary f-text c-secondary"><?php the_field('work_gallery_content'); ?></p>
-				<a href="<?php echo get_permalink($post)?>" class="work-gallery-page__link f-style-primary f-text c-primary">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
+				<a href="" class="work-gallery__link f-style-primary f-heading-m c-primary" data-aos="zoom-in"><?php the_field('work_gallery_title'); ?></a>
+				<p class="work-gallery__paragraph f-style-primary f-text c-secondary" data-aos="zoom-in"><?php the_field('work_gallery_content'); ?></p>
+				<a href="<?php echo get_permalink($post)?>" class="work-gallery-page__link f-style-primary f-text c-primary" data-aos="zoom-in">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
 			</div>
 			<div class="work-gallery-image flex-55">
-				<img src="<?php the_field('work_gallery_image'); ?>" alt="Work Image" class="section__image">
+				<img src="<?php the_field('work_gallery_image'); ?>" alt="Work Image" class="section__image" data-aos="zoom-in">
+				<a href="<?php echo get_permalink($post)?>" class="mobile__link f-style-primary f-text c-primary" data-aos="zoom-in">Dowiedz się więcej<i class="fa-solid fa-folder-open"></i></a>
 			</div>
 		</div>
 			
